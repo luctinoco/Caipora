@@ -2,7 +2,7 @@
 
 ## Landscape Metrics Analysis Tool for Public Health Applications
 
-This Python script serves as a comprehensive toolset designed for postgraduate students in geoprocessing, specifically tailored for public health applications. It facilitates the analysis of landscape metrics from raster data, providing interactive visualizations and saving outputs for further analysis.
+This Python script serves as a comprehensive toolset designed for postgraduate students, specifically tailored for public health applications. It facilitates the analysis of landscape metrics from raster data, providing interactive visualizations and saving outputs for further analysis.
 
 ## Overview
 
