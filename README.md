@@ -63,3 +63,7 @@ To use the script:
 - This script emphasizes simplicity and educational value, aiming to be accessible for students new to Python.
 - As the author, I welcome discussions on improving the script while preserving its educational intent.
 - This script provides foundational tools for landscape analysis relevant to public health, facilitating rapid and meaningful exploration of landscape metrics. For detailed guidance on customization or further functionality, refer to the documentation of each Python package used.
+
+Happy coding!
+
+Lucas F. T. Leonardo
