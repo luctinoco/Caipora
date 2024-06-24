@@ -137,6 +137,8 @@ By following these guidelines and paying attention to error messages, you can ef
 ## Acknowledgments
 We extend our gratitude to all contributors, past, present, and future, who help make this project a valuable resource for learners around the world. Together, we can empower the next generation of programmers and creators.
 
+Don't forget to cite this repository if you use its code in your project.
+
 Happy coding!
 
 Lucas F. T. Leonardo
