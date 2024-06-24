@@ -26,6 +26,7 @@ import folium  # Import folium for interactive maps
 import numpy as np  # Import numpy for numerical operations
 from matplotlib.colors import ListedColormap  # Import ListedColormap for custom colormaps
 
+
 # Function to calculate and save landscape metrics and plot the raster interactively
 def calculate_save_metrics_and_plot(input_file, output_file, color_excel, nodata_value=0):
     # Load raster data and calculate metrics using pylandstats
@@ -70,15 +71,15 @@ def calculate_save_metrics_and_plot(input_file, output_file, color_excel, nodata
     return m
 
 # Example usage:
-input_raster = '/content/drive/MyDrive/cartografia_2024.2/bairros_2021.tif'
-output_file = '/content/drive/MyDrive/cartografia_2024.2/bairros_2021.csv'
-color_excel = '/content/drive/MyDrive/cartografia_2024.2/Codigos-da-legenda-colecao-8.xlsx'  # Assumes this is an Excel file with required format
+input_raster = 'your_raster.tif'
+output_file = 'metrics_output.csv'
+color_excel = 'color_data.xlsx'  # Assumes this is an Excel file with required format
 
 # Call the function to perform calculations, save metrics, and plot raster
 m = calculate_save_metrics_and_plot(input_raster, output_file, color_excel)
 
 # Save the interactive map as HTML
-html_output = '/content/drive/MyDrive/cartografia_2024.2/map_output.html'
+html_output = 'map_output.html'
 m.save(html_output)
 print(f'Map saved to {html_output}')
 
@@ -90,3 +91,4 @@ print('Process completed successfully.')
 
 # Display the interactive map in Jupyter Notebook or Google Colab
 m
+     
