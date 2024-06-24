@@ -1,12 +1,3 @@
-import subprocess  # Import subprocess module to run shell commands
-import pylandstats as pls  # Import pylandstats for landscape analysis
-import pandas as pd  # Import pandas for data manipulation
-import rasterio  # Import rasterio for raster data handling
-import folium  # Import folium for interactive maps
-import numpy as np  # Import numpy for numerical operations
-from matplotlib.colors import ListedColormap  # Import ListedColormap for custom colormaps
-
-
 # Function to check and install necessary packages
 def setup_environment():
     def check_install(package):
@@ -24,6 +15,16 @@ def setup_environment():
     for package in packages:
         check_install(package)
 
+# Execute setup_environment function to ensure required packages are installed
+setup_environment()
+
+import subprocess  # Import subprocess module to run shell commands
+import pylandstats as pls  # Import pylandstats for landscape analysis
+import pandas as pd  # Import pandas for data manipulation
+import rasterio  # Import rasterio for raster data handling
+import folium  # Import folium for interactive maps
+import numpy as np  # Import numpy for numerical operations
+from matplotlib.colors import ListedColormap  # Import ListedColormap for custom colormaps
 
 # Function to calculate and save landscape metrics and plot the raster interactively
 def calculate_save_metrics_and_plot(input_file, output_file, color_excel, nodata_value=0):
@@ -68,20 +69,16 @@ def calculate_save_metrics_and_plot(input_file, output_file, color_excel, nodata
     # Display the map
     return m
 
-
-# Execute setup_environment function to ensure required packages are installed
-setup_environment()
-
 # Example usage:
-input_raster = 'your_raster.tif'
-output_file = 'metrics_output.csv'
-color_excel = 'color_data.xlsx'  # Assumes this is an Excel file with required format
+input_raster = '/content/drive/MyDrive/cartografia_2024.2/bairros_2021.tif'
+output_file = '/content/drive/MyDrive/cartografia_2024.2/bairros_2021.csv'
+color_excel = '/content/drive/MyDrive/cartografia_2024.2/Codigos-da-legenda-colecao-8.xlsx'  # Assumes this is an Excel file with required format
 
 # Call the function to perform calculations, save metrics, and plot raster
 m = calculate_save_metrics_and_plot(input_raster, output_file, color_excel)
 
 # Save the interactive map as HTML
-html_output = 'map_output.html'
+html_output = '/content/drive/MyDrive/cartografia_2024.2/map_output.html'
 m.save(html_output)
 print(f'Map saved to {html_output}')
 
