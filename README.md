@@ -2,24 +2,24 @@
 
 ## Landscape Metrics Analysis Tool for Public Health Applications
 
-This Python script serves as a comprehensive toolset designed for postgraduate students, specifically tailored for public health applications. It facilitates the analysis of landscape metrics from raster data, providing interactive visualizations and saving outputs for further analysis.
+This Python script provides a comprehensive toolset designed for postgraduate students in public health applications. It facilitates the analysis of landscape metrics from raster data, enabling interactive visualizations and saving outputs for further analysis.
 
 ## Overview
 
 The script leverages various Python libraries to manage raster data, compute landscape metrics, create interactive maps, and handle data formats:
 
-### Packages Used:
+### Libraries Used:
 
-- **pylandstats:** Computes landscape metrics like class area, edge density, and shape index.
+- **pylandstats:** Computes landscape metrics such as class area, edge density, and shape index.
 - **openpyxl:** Reads Excel files to define colors for raster classes.
-- **rasterio:** Manipulates raster data by loading arrays and transforming coordinates.
+- **rasterio:** Handles raster data by loading arrays and transforming coordinates.
 - **folium:** Generates interactive maps in HTML format.
-- **numpy:** Facilitates numerical operations on arrays.
+- **numpy:** Supports numerical operations on arrays.
 - **matplotlib:** Specifically uses ListedColormap for customizing plot colors.
 
-### Functions Defined:
+### Functions Implemented:
 
-- **setup_environment():** Ensures all required Python packages are installed, making the script easy to set up for newcomers.
+- **setup_environment():** Ensures all required Python packages are installed, simplifying setup for new users.
   
 - **calculate_save_metrics_and_plot(input_file, output_file, color_excel, nodata_value=0):**
   - Loads raster data using rasterio and computes landscape metrics via pylandstats.
@@ -32,37 +32,43 @@ The script leverages various Python libraries to manage raster data, compute lan
 
 To use the script:
 
-1. Replace 'your_raster.tif' with your raster file path.
-2. Ensure 'color_data.xlsx' follows the required format (Class ID and Color columns).
-3. Execute the script to compute metrics, save outputs, and create an interactive map.
+1. Ensure your raster file ('.tif') and color data file ('.xlsx') are in the same directory as the script.
+2. Execute the script to automatically detect and analyze the files.
 
-### Outputs:
+## Color Data File Requirements
 
-- **Metrics Output ('metrics_output.csv'):** Contains calculated landscape metrics.
-- **Interactive Map Output ('map_output.html'):** Visualizes raster data with assigned colors.
+For the script to properly assign colors to raster classes, ensure your color data file (`color_data.xlsx`) meets the following requirements:
 
-## Usage
+1. **Excel File Format**: The color data should be provided in an Excel (.xlsx) format.
+   
+2. **Sheet Structure**: The Excel file should contain a sheet with the necessary data. Ensure:
+   - The sheet contains columns with headers.
+   - One column should be named **"Class_ID"**: This column specifies the unique identifier for each raster class.
+   - Another column should be named **"Color"**: This column specifies the color assigned to each raster class, represented in hexadecimal format (e.g., `#RRGGBB`).
 
-### Setup:
+3. **Color Format**: Colors in the "Color" column must be in hexadecimal format to ensure compatibility with plotting functions.
 
-- Ensure Python and required packages (pylandstats, openpyxl, rasterio, folium) are installed.
-- Run setup_environment() to install any missing packages.
+### Example of Color Data Sheet Structure:
 
-### Running the Script:
+| Class_ID | Color     |
+|----------|-----------|
+| 1        | #FF0000   |
+| 2        | #00FF00   |
+| 3        | #0000FF   |
+| ...      | ...       |
 
-1. Adjust `input_file`, `output_file`, and `color_excel` variables according to your data.
-2. Execute the script (`python script_name.py`).
+### Notes:
+- Ensure the `Class_ID` matches the class identifiers used in your raster data.
+- `Colors` are specified in hexadecimal format (e.g., `#RRGGBB`).
 
-### Viewing Outputs:
+## Compatibility and Adaptation
 
-- Check 'metrics_output.csv' for metrics data.
-- Open 'map_output.html' in a web browser to interact with the map.
+While originally designed for land use and land cover rasters from the MapBiomas platform, this script is modular and adaptable. It can process other raster types with appropriate adjustments to input parameters and data handling.
 
-## Notes:
+By following these guidelines and leveraging the script's flexibility, you can effectively analyze landscape metrics and visualize results tailored to your specific raster datasets.
 
-- This script emphasizes simplicity and educational value, aiming to be accessible for students new to Python.
-- As the author, I welcome discussions on improving the script while preserving its educational intent.
-- This script provides foundational tools for landscape analysis relevant to public health, facilitating rapid and meaningful exploration of landscape metrics. For detailed guidance on customization or further functionality, refer to the documentation of each Python package used.
+## Acknowledgments
+We extend our gratitude to all contributors, past, present, and future, who help make this project a valuable resource for learners around the world. Together, we can empower the next generation of programmers and creators.
 
 Happy coding!
 
