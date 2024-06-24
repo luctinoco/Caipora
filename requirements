@@ -1,0 +1,6 @@
+pylandstats
+openpyxl
+rasterio
+folium
+pandas
+numpy
