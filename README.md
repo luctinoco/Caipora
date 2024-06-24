@@ -59,13 +59,29 @@ For the script to properly assign colors to raster classes, ensure your color da
 
 ### Notes:
 - Ensure the `Class_ID` matches the class identifiers used in your raster data.
-- `Colors` are specified in hexadecimal format (e.g., `#RRGGBB`).
+- `Color` are specified in hexadecimal format (e.g., `#RRGGBB`).
 
 ## Compatibility and Adaptation
 
 While originally designed for land use and land cover rasters from the MapBiomas platform, this script is modular and adaptable. It can process other raster types with appropriate adjustments to input parameters and data handling.
 
-By following these guidelines and leveraging the script's flexibility, you can effectively analyze landscape metrics and visualize results tailored to your specific raster datasets.
+### Usage on Google Colab
+
+To use this project on Google Colab, click the badge below to open the notebook in Colab:
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/luctinoco/Pylands-Learn-Apply/blob/main/notebooks/Pylands-Learn-Apply.ipynb)
+
+### Getting Started in Google Colab
+
+1. Open the notebook in Colab using the badge above.
+2. Configure the environment by running the following cells at the beginning of the notebook:
+
+   ```python
+   !git clone https://github.com/luctinoco/Pylands-Learn-Apply.git
+   %cd Pylands-Learn-Apply
+   !pip install -r requirements.txt
+   
+3.Follow the examples provided in the notebook to analyze your raster data and visualize results.
 
 ## Acknowledgments
 We extend our gratitude to all contributors, past, present, and future, who help make this project a valuable resource for learners around the world. Together, we can empower the next generation of programmers and creators.
