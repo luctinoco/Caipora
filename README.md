@@ -10,15 +10,15 @@ This script leverages various Python libraries to manage raster data, compute la
 
 ### Libraries Used:
 
-- **pylandstats:** Computes landscape metrics such as class area, edge density, and shape index.
-- **openpyxl:** Reads Excel files to define colors for raster classes.
-- **rasterio:** Handles raster data by loading arrays and transforming coordinates.
-- **folium:** Generates interactive maps in HTML format.
-- **numpy:** Supports numerical operations on arrays.
-- **geopandas:** Provides spatial operations and data structures.
-- **matplotlib:** Generates plots and visualizations.
-- **shapely:** Manipulates and analyzes geometric objects.
-- **IPython, ipywidgets:** Enables interactive computing and widgets for data visualization.
+- **[pylandstats](https://github.com/25priya/pylandstats):** Computes landscape metrics such as class area, edge density, and shape index.
+- **[openpyxl](https://openpyxl.readthedocs.io/en/stable/):** Reads Excel files to define colors for raster classes.
+- **[rasterio](https://rasterio.readthedocs.io/en/latest/):** Handles raster data by loading arrays and transforming coordinates.
+- **[folium](https://python-visualization.github.io/folium/):** Generates interactive maps in HTML format.
+- **[numpy](https://numpy.org/):** Supports numerical operations on arrays.
+- **[geopandas](https://geopandas.org/):** Provides spatial operations and data structures.
+- **[matplotlib](https://matplotlib.org/):** Generates plots and visualizations.
+- **[shapely](https://shapely.readthedocs.io/en/stable/):** Manipulates and analyzes geometric objects.
+- **[IPython](https://ipython.org/), [ipywidgets](https://ipywidgets.readthedocs.io/en/stable/):** Enables interactive computing and widgets for data visualization.
 
 ## Functions Implemented:
 
