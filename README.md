@@ -80,17 +80,18 @@ To use this script in Google Colab, run this command in your Colab environment:
 ```
 ## This command does the following steps:
 
-1.Clones the Pylands-Learn-Apply repository from GitHub.
+The command `git clone https://github.com/luctinoco/Pylands-Learn-Apply.git` downloads a repository from GitHub with the URL provided. Here's what each part does:
 
-2.Changes the directory to Pylands-Learn-Apply/notebooks.
+- `git clone`: This Git command is used to make a copy of a repository from a remote source (in this case, GitHub).
+- `https://github.com/luctinoco/Pylands-Learn-Apply.git`: This is the URL of the repository you want to clone.
 
-3.Runs the Pylands-Learn-Apply.ipynb script.
+After cloning the repository, `%cd Pylands-Learn-Apply` changes the current directory to `Pylands-Learn-Apply`, assuming it exists in your current working directory.
 
-Make sure to replace Pylands-Learn-Apply.ipynb with the actual script filename if it's different. Adjust the paths and filenames as per your specific setup in Google Colab.
+Finally, `%run Pylands-Learn-Apply.ipynb` executes the Google Colab file `Pylands-Learn-Apply.ipynb`.
 
 ### Or click in this banner:
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/luctinoco/Pylands-Learn-Apply/blob/main/notebooks/Pylands-Learn-Apply.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/luctinoco/Pylands-Learn-Apply/blob/main/notebooks/Clone_learn.ipynb)
 
 ### Follow these examples steps to execute the Pylands-Learn-Apply script:
 
