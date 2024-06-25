@@ -10,7 +10,7 @@ This script leverages various Python libraries to manage raster data, compute la
 
 ### Libraries Used:
 
-- **[pylandstats](https://github.com/25priya/pylandstats):** Computes landscape metrics such as class area, edge density, and shape index.
+- **[pylandstats](https://pylandstats.readthedocs.io/en/latest/landscape.html):** Computes landscape metrics such as class area, edge density, and shape index.
 - **[openpyxl](https://openpyxl.readthedocs.io/en/stable/):** Reads Excel files to define colors for raster classes.
 - **[rasterio](https://rasterio.readthedocs.io/en/latest/):** Handles raster data by loading arrays and transforming coordinates.
 - **[folium](https://python-visualization.github.io/folium/):** Generates interactive maps in HTML format.
