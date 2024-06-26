@@ -74,8 +74,17 @@ For detailed legend codes from MapBiomas, you can visit their [legend code page]
 To use this script in Google Colab, run this command in your Colab environment:
 
 ```bash
-!git clone https://github.com/luctinoco/Pylands-Learn-Apply.git
+import os
+
+# Check if the directory exists
+if not os.path.exists("Pylands-Learn-Apply"):
+    # Clone the repository if it doesn't exist
+    !git clone https://github.com/luctinoco/Pylands-Learn-Apply.git
+
+# Change into the directory
 %cd Pylands-Learn-Apply
+
+# Run the notebook
 %run Pylands-Learn-Apply.ipynb
 ```
 ## This command does the following steps:
