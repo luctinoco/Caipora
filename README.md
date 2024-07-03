@@ -11,7 +11,7 @@ This script leverages various Python libraries to manage raster data, compute la
 ### Libraries Used:
 
 - **[pylandstats](https://pylandstats.readthedocs.io/en/latest/landscape.html):** Computes landscape metrics such as class area, edge density, and shape index.
-- **[openpyxl](https://openpyxl.readthedocs.io/en/stable/):** Reads Excel files to define colors for raster classes.
+- **[openpyxl](https://openpyxl.readthedocs.io/en/stable/):** Reads `.xlsx` files to define colors for raster classes.
 - **[rasterio](https://rasterio.readthedocs.io/en/latest/):** Handles raster data by loading arrays and transforming coordinates.
 - **[folium](https://python-visualization.github.io/folium/):** Generates interactive maps in HTML format.
 - **[numpy](https://numpy.org/):** Supports numerical operations on arrays.
@@ -26,11 +26,11 @@ This script leverages various Python libraries to manage raster data, compute la
 
 Ensures all required Python packages are installed, simplifying setup for new users.
 
-### `calculate_save_metrics_and_plot(input_raster, output_folder, output_base_name, color_excel, nodata_value=0)`
+### `calculate_save_metrics_and_plot(input_raster, output_folder, output_base_name, color_data, nodata_value=0)`
 
 - Loads raster data using rasterio and computes landscape metrics via pylandstats.
 - Saves metrics to a CSV file (`{output_base_name}_metrics_output.csv`).
-- Reads a color legend from an Excel file (`color_excel`) to assign colors to raster classes.
+- Reads a color legend from an Data file (`color_data`) to assign colors to raster classes.
 - Generates a raster plot using `matplotlib` and `GeoPandas`, allowing interactive legend customization.
 - Creates an interactive pie chart based on selected metrics using `ipywidgets`.
 - Generates an interactive map using folium, saved as an HTML file (`{output_base_name}_map_output.html`).
@@ -41,14 +41,15 @@ While originally designed for land use and land cover rasters from platforms lik
 
 ## Color Data File Requirements
 
-To properly assign colors to raster classes, ensure your color data file (`color_data.xlsx`) meets these requirements:
+To properly assign colors to raster classes, ensure your color data file (`color_data.xlsx` or `color_data.csv`) meets these requirements:
 
-1. **Excel File Format**: Provide color data in an Excel (.xlsx) format.
+1. **Data color File Format**: Provide color data in an Data color (`.xlsx`) or (`.csv`) format.
    
-2. **Sheet Structure**: The Excel file should have:
+2. **Sheet Structure**: The Data color file should have:
    - A sheet with columns containing headers.
    - A `Class_ID` column specifying unique identifiers for raster classes.
    - A `Color` column with hexadecimal color codes (e.g., `#RRGGBB`).
+   - If the data file is a CSV (*.csv), the separator must be `;`.
 
 ### Example of Color Data Sheet Structure:
 
@@ -112,8 +113,8 @@ Finally, `%run Pylands-Learn-Apply.ipynb` executes the Google Colab file `Pyland
    - Enter the path to the input raster (.tif) file: `/content/drive/My Drive/raster_data.tif`
    - Provide the path to the raster file in `*.tif` format. The script will check if the file exists and has the correct extension.
 
-3. **Path to Color Legend Excel File (`color_data.xlsx`):**
-   - Input the path to the color legend Excel file in `*.xlsx` format.
+3. **Path to Color Legend Data color File (`color_data.xlsx`):**
+   - Input the path to the color legend Data color file in `*.xlsx` or `*.csv`format.
    - The script will verify if the file exists and has the correct extension.
 
 4. **Base Name for Output Files (without extension):**
@@ -243,7 +244,7 @@ FileNotFoundError: No .tif file found at the specified path: /content/drive/My D
    - If the provided files do not match the expected file types (*.tif for raster and color_data.xlsx for color data), the script will raise an appropriate error.
    - Example:
      
-ValueError: Incorrect file type provided. Expected *.tif raster file or color_data.xlsx Excel file.
+ValueError: Incorrect file type provided. Expected *.tif raster file or color_data.xlsx or color_data.csv file.
 
 
 3. **Other Errors:**
