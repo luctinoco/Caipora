@@ -2,7 +2,7 @@
 
 ## Landscape Metrics Analysis Tool for Public Health Applications
 
-Pylands-Learn-Apply is a Python script designed for postgraduate students in public health applications. It facilitates the analysis of landscape metrics from raster data, enabling interactive visualizations and saving outputs for further analysis.
+The Python script Pylands-Learn-Apply is designed for postgraduate students in public health applications. It facilitates the analysis of landscape metrics from raster data, enabling interactive visualizations and saving outputs for further analysis. This tool can be particularly useful for graduate students working in fields related to geoprocessing, epidemiology, and public health.
 
 ## Overview
 
@@ -10,15 +10,34 @@ This script leverages various Python libraries to manage raster data, compute la
 
 ### Libraries Used:
 
-- **[pylandstats](https://pylandstats.readthedocs.io/en/latest/landscape.html):** Computes landscape metrics such as class area, edge density, and shape index.
-- **[openpyxl](https://openpyxl.readthedocs.io/en/stable/):** Reads `.xlsx` files to define colors for raster classes.
-- **[rasterio](https://rasterio.readthedocs.io/en/latest/):** Handles raster data by loading arrays and transforming coordinates.
-- **[folium](https://python-visualization.github.io/folium/):** Generates interactive maps in HTML format.
-- **[numpy](https://numpy.org/):** Supports numerical operations on arrays.
-- **[geopandas](https://geopandas.org/):** Provides spatial operations and data structures.
-- **[matplotlib](https://matplotlib.org/):** Generates plots and visualizations.
-- **[shapely](https://shapely.readthedocs.io/en/stable/):** Manipulates and analyzes geometric objects.
-- **[IPython](https://ipython.org/), [ipywidgets](https://ipywidgets.readthedocs.io/en/stable/):** Enables interactive computing and widgets for data visualization.
+1. **[os](https://docs.python.org/3/library/os.html)**
+   - **Description**: This is a standard Python library for interacting with the operating system. It allows you to handle file and directory operations.
+2. **[pandas](https://pandas.pydata.org/)**
+   - **Description**: A powerful data manipulation and analysis library that provides data structures like DataFrames to handle structured data efficiently.
+3. **[rasterio](https://rasterio.readthedocs.io/en/latest/)**
+   - **Description**: A library for reading and writing geospatial raster data. It allows easy manipulation and analysis of raster data.
+4. **[folium](https://python-visualization.github.io/folium/)**
+   - **Description**: A library for creating interactive maps using Leaflet.js. It is useful for visualizing geospatial data.
+5. **[numpy](https://numpy.org/)**
+   - **Description**: A fundamental package for scientific computing in Python. It provides support for arrays, matrices, and many mathematical functions.
+6. **[matplotlib](https://matplotlib.org/).pyplot**
+   - **Description**: A plotting library used for creating static, interactive, and animated visualizations in Python.
+7. **[geopandas](https://geopandas.org/)**
+   - **Description**: An extension of pandas that allows for easy manipulation and analysis of geospatial data. It supports operations on geometric types.
+8. **[shapely](https://shapely.readthedocs.io/en/stable/).geometry**
+   - **Description**: A library for the manipulation and analysis of planar geometric objects. The `box` function is used to create rectangular geometries.
+9. **[matplotlib](https://matplotlib.org/).patches**
+   - **Description**: This submodule contains a collection of patch objects, including `Patch`, which is used to create various geometric shapes in a plot.
+10. **[matplotlib](https://matplotlib.org/).colors**
+    - **Description**: This submodule includes functions and classes for handling colors, including `ListedColormap`, which is used to create custom colormaps.
+11. **[IPython](https://ipython.org/).display**
+    - **Description**: Contains functions to display rich media in notebooks, such as images, HTML, and widgets.
+12. **[ipywidgets](https://ipywidgets.readthedocs.io/en/stable/)**
+    - **Description**: A library for creating interactive HTML widgets for notebooks, enabling the creation of interactive GUIs.
+13. **[pylandstats](https://pylandstats.readthedocs.io/en/latest/landscape.html):**
+    - **Description**: A library for landscape metrics computation and spatial pattern analysis, useful in landscape ecology and spatial analysis studies.
+14. **google.colab.drive**
+    - **Description**: Provides tools to mount and interact with Google Drive from Google Colab notebooks, enabling access to files stored in Google Drive.
 
 ## Functions Implemented:
 
@@ -49,7 +68,7 @@ To properly assign colors to raster classes, ensure your color data file (`color
    - A sheet with columns containing headers.
    - A `Class_ID` column specifying unique identifiers for raster classes.
    - A `Color` column with hexadecimal color codes (e.g., `#RRGGBB`).
-   - If the data file is a CSV (*.csv), the separator must be `;`.
+   - If the data file is a `.csv`, the separator must be `;`.
 
 ### Example of Color Data Sheet Structure:
 
