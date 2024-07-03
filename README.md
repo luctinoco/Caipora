@@ -138,7 +138,7 @@ This naming convention makes it clear which files belong together and simplifies
     │   ├── Legend-collection-8.xlsx '/content/drive/MyDrive/MAPBIOMAS-EXPORT/Legend-collection-8.xlsx'
     │   ├── mapbiomas-brazil-collection-80-2022.tif '/content/drive/MyDrive/MAPBIOMAS-EXPORT/mapbiomas-brazil-collection-80-2022.tif'
 ```
-![Without outputs](without_outputs.png)
+![Without outputs](images/without_outputs.png)
 
 ### With outputs
 ```bash
@@ -150,7 +150,7 @@ This naming convention makes it clear which files belong together and simplifies
     │   ├── base_name_raster_plot.png '/content/drive/MyDrive/MAPBIOMAS-EXPORT/base_name_raster_plot.png'
     │   ├── mapbiomas-brazil-collection-80-2022.tif '/content/drive/MyDrive/MAPBIOMAS-EXPORT/mapbiomas-brazil-collection-80-2022.tif'
 ```
-![With outputs](with_outputs.png)
+![With outputs](images/with_outputs.png)
     
 ## Base Name for Output Files (without extension):
 
