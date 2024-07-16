@@ -215,7 +215,7 @@ The raster plot visualizes the input raster data, where each pixel represents a 
   
 - **Legend:** The legend accompanying the plot explains the correspondence between colors and land cover classes, aiding in interpretation.
 
-[Click here for example image](images/aracaju_landcover.png)
+![Aracaju Land Cover](images/aracaju_landcover.png)
 
 ### 2. Interactive Map
 
@@ -227,7 +227,7 @@ The interactive map generated using folium provides an interactive visualization
   
 - **Export Functionality:** The map can be exported as an HTML file (`{output_base_name}_map_output.html`), allowing for easy sharing and integration into reports or presentations.
 
-[Click here for example interactive map](https://github.com/luctinoco/Pylands-Learn-Apply/raw/main/images/Aracaju%20(SE)%20Land%20Use%20and%20Cover%20-%202022%20(MapBiomas%208.0)_map_output.html)
+<iframe src="https://luctinoco.github.io/Pylands-Learn-Apply/Aracaju%20(SE)%20Land%20Use%20and%20Cover%20-%202022%20(MapBiomas%208.0)_map_output.html" width="100%" height="600px"></iframe>
 
 ### 3. Pie Chart (Interactive)
 
@@ -237,7 +237,7 @@ An interactive pie chart generated using ipywidgets complements the raster plot 
   
 - **Dynamic Updates:** As metrics are selected or changed, the pie chart dynamically updates to reflect the proportion of each class contributing to the selected metric.
 
-[Click here for example image](images/area_proportion_aracaju-2022.png)
+![Area proportion Aracaju 2022](images/area_proportion_aracaju-2022.png)
 
 ### 4. Metrics Output (CSV)
 
