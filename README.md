@@ -7,7 +7,7 @@ Pylands-Learn-Apply is a Python script specifically designed as a teaching tool 
 ### The primary educational benefits of Pylands-Learn-Apply include:
 
 - **Raster File Manipulation:** Learn to import, manage, transform, and operate on raster data, understanding spatial projections and resolutions.
-- **Pixel Value Extraction: Extract** and manipulate pixel-stored values, calculate descriptive statistics, and create thematic maps.
+- **Pixel Value Extraction**: Extract and manipulate pixel-stored values, calculate descriptive statistics, and create thematic maps.
 - **Landscape Metrics Interpretation:** Understand and analyze metrics like diversity, connectivity, and fragmentation, and assess their environmental and epidemiological impacts.
 
 As a teaching tool, Pylands-Learn-Apply enables users to turn complex geospatial data into meaningful insights, advancing both their education and practical applications in public health.
