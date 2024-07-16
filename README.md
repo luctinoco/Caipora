@@ -215,6 +215,8 @@ The raster plot visualizes the input raster data, where each pixel represents a 
   
 - **Legend:** The legend accompanying the plot explains the correspondence between colors and land cover classes, aiding in interpretation.
 
+[Click here for example image](images/aracaju_landcover.png)
+
 ### 2. Interactive Map
 
 The interactive map generated using folium provides an interactive visualization of landscape metrics computed from the raster data. Key features of the interactive map include:
@@ -225,6 +227,8 @@ The interactive map generated using folium provides an interactive visualization
   
 - **Export Functionality:** The map can be exported as an HTML file (`{output_base_name}_map_output.html`), allowing for easy sharing and integration into reports or presentations.
 
+[Click here for example interactive map](images/Aracaju (SE) Land Use and Cover - 2022 (MapBiomas 8.0)_map_output.html)
+
 ### 3. Pie Chart (Interactive)
 
 An interactive pie chart generated using ipywidgets complements the raster plot by illustrating the distribution of selected landscape metrics across different land cover classes. Features of the pie chart include:
@@ -232,6 +236,8 @@ An interactive pie chart generated using ipywidgets complements the raster plot 
 - **Metric Selection:** Users can select different metrics (e.g., class area, edge density) from a dropdown menu to visualize.
   
 - **Dynamic Updates:** As metrics are selected or changed, the pie chart dynamically updates to reflect the proportion of each class contributing to the selected metric.
+
+[Click here for example image](images/area_proportion_aracaju-2022.png)
 
 ### 4. Metrics Output (CSV)
 
