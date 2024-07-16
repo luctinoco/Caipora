@@ -1,8 +1,16 @@
 # Pylands-Learn-Apply
 
-## Landscape Metrics Analysis Tool for Public Health Applications
+## Pylands-Learn-Apply: A Teaching Tool for Public Health Students
 
-The Python script Pylands-Learn-Apply is designed for postgraduate students in public health applications. It facilitates the analysis of landscape metrics from raster data, enabling interactive visualizations and saving outputs for further analysis. This tool can be particularly useful for graduate students working in fields related to geoprocessing, epidemiology, and public health.
+Pylands-Learn-Apply is a Python script specifically designed as a teaching tool for undergraduate and postgraduate students in public health. It simplifies the analysis of landscape metrics from raster data, offering interactive visualizations and saving outputs for further analysis. This tool is particularly focused on educating new students and professionals interested in geoprocessing, epidemiology, and public health.
+
+### The primary educational benefits of Pylands-Learn-Apply include:
+
+- **Raster File Manipulation:** Learn to import, manage, transform, and operate on raster data, understanding spatial projections and resolutions.
+- **Pixel Value Extraction: Extract** and manipulate pixel-stored values, calculate descriptive statistics, and create thematic maps.
+- **Landscape Metrics Interpretation:** Understand and analyze metrics like diversity, connectivity, and fragmentation, and assess their environmental and epidemiological impacts.
+
+As a teaching tool, Pylands-Learn-Apply enables users to turn complex geospatial data into meaningful insights, advancing both their education and practical applications in public health.
 
 ## Overview
 
@@ -45,11 +53,15 @@ This script leverages various Python libraries to manage raster data, compute la
 
 Ensures all required Python packages are installed, simplifying setup for new users.
 
+### `check_drive_mount()`
+
+Checks if Google Drive is mounted and mounts it if not, ensuring access to files stored in Google Drive.
+
 ### `calculate_save_metrics_and_plot(input_raster, output_folder, output_base_name, color_data, nodata_value=0)`
 
 - Loads raster data using rasterio and computes landscape metrics via pylandstats.
 - Saves metrics to a CSV file (`{output_base_name}_metrics_output.csv`).
-- Reads a color legend from an Data file (`color_data`) to assign colors to raster classes.
+- Reads a color legend from a data file (`color_data.xlsx` or `color_data.csv`) to assign colors to raster classes.
 - Generates a raster plot using `matplotlib` and `GeoPandas`, allowing interactive legend customization.
 - Creates an interactive pie chart based on selected metrics using `ipywidgets`.
 - Generates an interactive map using folium, saved as an HTML file (`{output_base_name}_map_output.html`).
@@ -62,10 +74,9 @@ While originally designed for land use and land cover rasters from platforms lik
 
 To properly assign colors to raster classes, ensure your color data file (`color_data.xlsx` or `color_data.csv`) meets these requirements:
 
-1. **Data color File Format**: Provide color data in an Data color (`.xlsx`) or (`.csv`) format.
-   
-2. **Sheet Structure**: The Data color file should have:
-   - A sheet with columns containing headers.
+1. **File Format**: Provide color data in an Excel (`.xlsx`) or CSV (`.csv`) format.
+2. **Sheet Structure**: The data file should have:
+   - Columns with headers.
    - A `Class_ID` column specifying unique identifiers for raster classes.
    - A `Color` column with hexadecimal color codes (e.g., `#RRGGBB`).
    - If the data file is a `.csv`, the separator must be `;`.
@@ -246,7 +257,7 @@ Depending on the metrics computed and the specific configuration of the script, 
 
 By leveraging these plots and visualizations, users can gain valuable insights into landscape metrics derived from raster data, enhancing their understanding and decision-making processes in public health and environmental research.
 
-## Handling Errors
+### Handling Errors
 
 ### Error Messages for Incorrect Files
 
