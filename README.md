@@ -227,7 +227,7 @@ The interactive map generated using folium provides an interactive visualization
   
 - **Export Functionality:** The map can be exported as an HTML file (`{output_base_name}_map_output.html`), allowing for easy sharing and integration into reports or presentations.
 
-To view the interactive map, click <a href="https://luctinoco.github.io/Pylands-Learn-Apply/images/Aracaju%20(SE)%20Land%20Use%20and%20Cover%20-%202022%20(MapBiomas%208.0)_map_output.html" target="_blank">here</a>.
+<iframe src="https://luctinoco.github.io/Pylands-Learn-Apply/Aracaju%20(SE)%20Land%20Use%20and%20Cover%20-%202022%20(MapBiomas%208.0)_map_output.html" width="100%" height="600px"></iframe>
 
 ### 3. Pie Chart (Interactive)
 
