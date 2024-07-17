@@ -69,11 +69,11 @@ This script leverages various Python libraries to manage raster data, compute la
 
 ### `calculate_save_metrics_and_plot(input_raster, output_folder, output_base_name, color_data, nodata_value=0)`
 - Loads raster data using rasterio and computes landscape metrics via pylandstats.
-- Saves metrics to a CSV file ({output_base_name}_metrics_output.csv).
-- Reads a color legend from a data file (color_data.xlsx or color_data.csv) to assign colors to raster classes.
+- Saves metrics to a CSV file (`{output_base_name}_metrics_output.csv`).
+- Reads a color legend from a data file (`color_data.xlsx` or `color_data.csv`) to assign colors to raster classes.
 - Generates a raster plot using matplotlib and GeoPandas, allowing interactive legend customization.
 - Creates an interactive pie chart based on selected metrics using ipywidgets.
-- Generates an interactive map using folium, saved as an HTML file ({output_base_name}_map_output.html).
+- Generates an interactive map using folium, saved as an HTML file (`{output_base_name}_map_output.html`).
 
 ## Compatibility and Adaptation
 
@@ -228,7 +228,7 @@ The raster plot visualizes the input raster data, where each pixel represents a 
 
 ### 2. Metrics Output (CSV)
 
-The metrics computed from the raster data, based on the [pylandstats](https://pylandstats.readthedocs.io/en/latest/landscape.html) library, are saved into a CSV file `({output_base_name}_metrics_output.csv)`.
+The metrics computed from the raster data, based on the [pylandstats](https://pylandstats.readthedocs.io/en/latest/landscape.html) library, are saved into a CSV file (`{output_base_name}_metrics_output.csv`).
 
 ### 3. Pie Chart (Interactive)
 
