@@ -50,21 +50,30 @@ This script leverages various Python libraries to manage raster data, compute la
 ## Functions Implemented:
 
 ### `setup_environment()`
-
-Ensures all required Python packages are installed, simplifying setup for new users.
+- Ensures all required Python packages are installed, simplifying setup for new users.
 
 ### `check_drive_mount()`
+- Checks if Google Drive is mounted and mounts it if not, ensuring access to files stored in Google Drive.
 
-Checks if Google Drive is mounted and mounts it if not, ensuring access to files stored in Google Drive.
+### `hex_to_rgb(hex_color)`
+- Converts a hexadecimal color code to an RGB tuple.
+
+### `read_color_legend(color_file)`
+- Reads color legend data from either an Excel (.xlsx) or CSV (.csv) file.
+
+### `plot_pie_chart_by_metric(metric)`
+- Plots a pie chart for the given metric, using the color legend and metric data.
+
+### `save_current_figure(b)`
+- Saves the currently displayed figure as a PNG file.
 
 ### `calculate_save_metrics_and_plot(input_raster, output_folder, output_base_name, color_data, nodata_value=0)`
-
 - Loads raster data using rasterio and computes landscape metrics via pylandstats.
-- Saves metrics to a CSV file (`{output_base_name}_metrics_output.csv`).
-- Reads a color legend from a data file (`color_data.xlsx` or `color_data.csv`) to assign colors to raster classes.
-- Generates a raster plot using `matplotlib` and `GeoPandas`, allowing interactive legend customization.
-- Creates an interactive pie chart based on selected metrics using `ipywidgets`.
-- Generates an interactive map using folium, saved as an HTML file (`{output_base_name}_map_output.html`).
+- Saves metrics to a CSV file ({output_base_name}_metrics_output.csv).
+- Reads a color legend from a data file (color_data.xlsx or color_data.csv) to assign colors to raster classes.
+- Generates a raster plot using matplotlib and GeoPandas, allowing interactive legend customization.
+- Creates an interactive pie chart based on selected metrics using ipywidgets.
+- Generates an interactive map using folium, saved as an HTML file ({output_base_name}_map_output.html).
 
 ## Compatibility and Adaptation
 
@@ -217,7 +226,33 @@ The raster plot visualizes the input raster data, where each pixel represents a 
 
 ![Aracaju Land Cover](images/aracaju_landcover.png)
 
-### 2. Interactive Map
+### 2. Metrics Output (CSV)
+
+The metrics computed from the raster data, based on the [pylandstats](https://pylandstats.readthedocs.io/en/latest/landscape.html) library, are saved into a CSV file ({output_base_name}_metrics_output.csv).
+
+### 3. Pie Chart (Interactive)
+
+An interactive pie chart generated using ipywidgets complements the raster plot by illustrating the distribution of selected landscape metrics across different land cover classes. Features of the pie chart include:
+
+- **Metric Selection:** Users can select different metrics (e.g., class area, edge density) from a dropdown menu to visualize.
+  
+- **Dynamic Updates:** As metrics are selected or changed, the pie chart dynamically updates to reflect the proportion of each class contributing to the selected metric.
+
+- **Save Button:** A "Save" button is provided to save the currently displayed pie chart as a PNG file. When clicked, the save button triggers a function that saves the chart with a filename based on the selected metric. This allows users to easily save and reference their visualizations for reports or further analysis.
+
+![Area proportion Aracaju 2022](images/area_proportion_aracaju-2022.png)
+
+#### Here's a detailed explanation of how the save button works:
+
+- **Button Creation:** The save button is created using ipywidgets.Button and is styled to be visually distinct with a description of "Save" and a green color indicating a positive action.
+
+- **Button Functionality:** The save button is linked to the `save_current_figure` function, which is executed when the button is clicked. This function checks if a metric has been selected and a pie chart is currently displayed.
+
+- **File Naming and Saving:** The `save_current_figure` function constructs a filename based on the selected metric, ensuring that the saved file is appropriately named for easy identification. The pie chart is then saved in the specified output folder.
+
+This combination of interactive selection and saving capabilities enhances the utility of the pie chart, making it a valuable tool for both visualization and documentation of landscape metrics.
+
+### 4. Interactive Map
 
 The interactive map generated using folium provides an interactive visualization of landscape metrics computed from the raster data. Key features of the interactive map include:
 
@@ -228,26 +263,6 @@ The interactive map generated using folium provides an interactive visualization
 - **Export Functionality:** The map can be exported as an HTML file (`{output_base_name}_map_output.html`), allowing for easy sharing and integration into reports or presentations.
 
 <iframe src="https://luctinoco.github.io/Pylands-Learn-Apply/images/Aracaju%20(SE)%20Land%20Use%20and%20Cover%20-%202022%20(MapBiomas%208.0)_map_output.html" width="100%" height="600px"></iframe>
-
-### 3. Pie Chart (Interactive)
-
-An interactive pie chart generated using ipywidgets complements the raster plot by illustrating the distribution of selected landscape metrics across different land cover classes. Features of the pie chart include:
-
-- **Metric Selection:** Users can select different metrics (e.g., class area, edge density) from a dropdown menu to visualize.
-  
-- **Dynamic Updates:** As metrics are selected or changed, the pie chart dynamically updates to reflect the proportion of each class contributing to the selected metric.
-
-![Area proportion Aracaju 2022](images/area_proportion_aracaju-2022.png)
-
-### 4. Metrics Output (CSV)
-
-Metrics computed from the raster data are saved into a CSV file (`{output_base_name}_metrics_output.csv`). This file includes quantitative data such as:
-
-- **Class Areas:** Area covered by each land cover class.
-  
-- **Edge Density:** Density of edges between different land cover classes.
-  
-- **Shape Index:** Measures of landscape shape complexity for each class.
 
 ### 5. Additional Plots (if applicable)
 
