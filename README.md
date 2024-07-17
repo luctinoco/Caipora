@@ -228,7 +228,7 @@ The raster plot visualizes the input raster data, where each pixel represents a 
 
 ### 2. Metrics Output (CSV)
 
-The metrics computed from the raster data, based on the [pylandstats](https://pylandstats.readthedocs.io/en/latest/landscape.html) library, are saved into a CSV file ({output_base_name}_metrics_output.csv).
+The metrics computed from the raster data, based on the [pylandstats](https://pylandstats.readthedocs.io/en/latest/landscape.html) library, are saved into a CSV file `({output_base_name}_metrics_output.csv)`.
 
 ### 3. Pie Chart (Interactive)
 
