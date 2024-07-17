@@ -140,7 +140,7 @@ Finally, `%run Pylands-Learn-Apply.ipynb` executes the Google Colab file `Pyland
 
 ### Or click in this banner:
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/luctinoco/Pylands-Learn-Apply/blob/main/Clone_learn.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/luctinoco/Pylands-Learn-Apply/blob/main/Pylands-Learn-Apply.ipynb)
 
 ### Follow these examples steps to execute the Pylands-Learn-Apply script:
 
