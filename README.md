@@ -1,4 +1,3 @@
-
 # Caipora - Metrics <img src="images/caipora.png" width="75">
 
 ## Who is Caipora?
