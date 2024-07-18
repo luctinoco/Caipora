@@ -1,5 +1,4 @@
-<a href="https://luctinoco.github.io/Caipora/" target="_blank"><img src="images/caipora.png" width="75"></a>
-# Caipora - Metrics 
+
 
 ## Who is Caipora?
 Caipora is a legendary figure from Brazilian folklore, originating from the Tupi-Guarani indigenous culture. The name "Caipora" comes from the Tupi words "caa" (forest) and "pora" (inhabitant), which together mean "inhabitant of the forest."
