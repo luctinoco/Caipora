@@ -1,16 +1,16 @@
-# Pylands-Learn-Apply
+# Caipora
 
-## Pylands-Learn-Apply: A Teaching Tool for Public Health Students
+## Caipora: A Teaching Tool for Public Health Students
 
-Pylands-Learn-Apply is a Python script specifically designed as a teaching tool for undergraduate and postgraduate students in public health. It simplifies the analysis of landscape metrics from raster data, offering interactive visualizations and saving outputs for further analysis. This tool is particularly focused on educating new students and professionals interested in geoprocessing, epidemiology, and public health.
+Caipora is a Python script specifically designed as a teaching tool for undergraduate and postgraduate students in public health. It simplifies the analysis of landscape metrics from raster data, offering interactive visualizations and saving outputs for further analysis. This tool is particularly focused on educating new students and professionals interested in geoprocessing, epidemiology, and public health.
 
-### The primary educational benefits of Pylands-Learn-Apply include:
+### The primary educational benefits of Caipora include:
 
 - **Raster File Manipulation:** Learn to import, manage, transform, and operate on raster data, understanding spatial projections and resolutions.
 - **Pixel Value Extraction**: Extract and manipulate pixel-stored values, calculate landscape metrics, and create thematic maps.
 - **Landscape Metrics Interpretation:** Understand and analyze metrics like diversity, connectivity, and fragmentation, and assess their environmental and epidemiological impacts.
 
-As a teaching tool, Pylands-Learn-Apply enables users to turn complex geospatial data into meaningful insights, advancing both their education and practical applications in public health.
+As a teaching tool, Caipora enables users to turn complex geospatial data into meaningful insights, advancing both their education and practical applications in public health.
 
 ## Overview
 
@@ -105,7 +105,7 @@ For detailed legend codes from MapBiomas, you can visit their [legend code page]
 
 ### Setup Instructions
 
-1. **Clone Repository**: Clone the Pylands-Learn-Apply repository to your local machine or Google Colab.
+1. **Clone Repository**: Clone the Caipora repository to your local machine or Google Colab.
    
 2. **Run the Script**: Execute the script and follow prompts to input necessary file paths and parameters.
 
@@ -117,32 +117,32 @@ To use this script in Google Colab, run this command in your Colab environment:
 import os
 
 # Check if the directory exists
-if not os.path.exists("Pylands-Learn-Apply"):
+if not os.path.exists("Caipora"):
     # Clone the repository if it doesn't exist
-    !git clone https://github.com/luctinoco/Pylands-Learn-Apply.git
+    !git clone https://github.com/luctinoco/Caipora.git
 
 # Change into the directory
-%cd Pylands-Learn-Apply
+%cd Caipora
 
 # Run the notebook
-%run Pylands-Learn-Apply.ipynb
+%run Caipora.ipynb
 ```
 ## This command does the following steps:
 
-The command `git clone https://github.com/luctinoco/Pylands-Learn-Apply.git` downloads a repository from GitHub with the URL provided. Here's what each part does:
+The command `git clone https://github.com/luctinoco/Caipora.git` downloads a repository from GitHub with the URL provided. Here's what each part does:
 
 - `git clone`: This Git command is used to make a copy of a repository from a remote source (in this case, GitHub).
-- `https://github.com/luctinoco/Pylands-Learn-Apply.git`: This is the URL of the repository you want to clone.
+- `https://github.com/luctinoco/Caipora.git`: This is the URL of the repository you want to clone.
 
-After cloning the repository, `%cd Pylands-Learn-Apply` changes the current directory to `Pylands-Learn-Apply`, assuming it exists in your current working directory.
+After cloning the repository, `%cd Caipora` changes the current directory to `Caipora`, assuming it exists in your current working directory.
 
-Finally, `%run Pylands-Learn-Apply.ipynb` executes the Google Colab file `Pylands-Learn-Apply.ipynb`.
+Finally, `%run Caipora.ipynb` executes the Google Colab file `Caipora.ipynb`.
 
 ### Or click in this banner:
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/luctinoco/Pylands-Learn-Apply/blob/main/Pylands-Learn-Apply.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/luctinoco/Caipora/blob/main/Caipora.ipynb)
 
-### Follow these examples steps to execute the Pylands-Learn-Apply script:
+### Follow these examples steps to execute the Caipora script:
 
 1. **Path to Output Folder:**
    - Enter the path to the output folder where results will be saved: `/content/drive/My Drive/Output`
@@ -212,7 +212,7 @@ When you provide a base name, such as `output_results`, it serves as a prefix fo
 
 ## Explain the Plots
 
-The Pylands-Learn-Apply script generates several plots and visualizations based on the input raster data and color legend. Here’s an explanation of each plot:
+The Caipora script generates several plots and visualizations based on the input raster data and color legend. Here’s an explanation of each plot:
 
 ### 1. Raster Plot
 
@@ -262,8 +262,8 @@ The interactive map generated using folium provides an interactive visualization
   
 - **Export Functionality:** The map can be exported as an HTML file (`{output_base_name}_map_output.html`), allowing for easy sharing and integration into reports or presentations.
 
-<a href="https://luctinoco.github.io/Pylands-Learn-Apply/images/Aracaju%20(SE)%20Land%20Use%20and%20Cover%20-%202022%20(MapBiomas%208.0)_map_output.html" target="_blank">
-    <img src="https://luctinoco.github.io/Pylands-Learn-Apply/images/thumb_aracaju.png" alt="Mapa Interativo"></a>
+<a href="https://luctinoco.github.io/Caipora/images/Aracaju%20(SE)%20Land%20Use%20and%20Cover%20-%202022%20(MapBiomas%208.0)_map_output.html" target="_blank">
+    <img src="https://luctinoco.github.io/Caipora/images/thumb_aracaju.png" alt="Mapa Interativo"></a>
 
 ### 5. Additional Plots (if applicable)
 
@@ -273,7 +273,7 @@ Depending on the metrics computed and the specific configuration of the script, 
 
 - **Public Health Applications:** Understanding landscape metrics is crucial for assessing environmental factors that impact public health, such as urban heat islands or biodiversity conservation.
   
-- **Policy and Planning:** Plots generated by Pylands-Learn-Apply aid policymakers and planners in making informed decisions regarding land use management and conservation strategies.
+- **Policy and Planning:** Plots generated by Caipora aid policymakers and planners in making informed decisions regarding land use management and conservation strategies.
   
 - **Research and Education:** These visualizations support research endeavors and educational purposes by providing clear, interpretable data representations.
 
@@ -313,7 +313,7 @@ IOError: Unable to read color data from color_data.xlsx. Please check the file f
 
 - **Check File Permissions:** Make sure you have the necessary permissions to access and read the files from your Google Drive.
 
-By following these guidelines and paying attention to error messages, you can effectively troubleshoot and resolve issues when using the Pylands-Learn-Apply script.
+By following these guidelines and paying attention to error messages, you can effectively troubleshoot and resolve issues when using the Caipora script.
 
 ## Acknowledgments
 
