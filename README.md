@@ -1,6 +1,15 @@
-# Caipora
+# Welcome to Caipora - Metrics!
 
-## Caipora: A Teaching Tool for Public Health Students
+![Caipora Metrics Logo](images/caipora.png)
+
+## Who is Caipora?
+Caipora is a legendary figure from Brazilian folklore, originating from the Tupi-Guarani indigenous culture. The name "Caipora" comes from the Tupi words "caa" (forest) and "pora" (inhabitant), which together mean "inhabitant of the forest."
+
+Caipora is depicted as a small, dark-skinned indigenous figure, sometimes with red hair. She fiercely protects the forest and its animals against human threats. Known for playing tricks on hunters and woodcutters, she disorients them and creates illusions to protect the forest's flora and fauna. Often seen riding a peccary (a type of wild pig), she is most active at night.
+
+To appease Caipora, hunters often leave offerings of tobacco or cachaça (a Brazilian alcoholic beverage) in the forest. Respecting her can bring good luck in hunting. Some stories suggest that Caipora can control forest animals, making them invisible or alerting them to the presence of hunters. While sometimes seen as a solitary entity, other stories describe her as part of a community of similar spirits.
+
+## Caipora - Metrics: A Teaching Tool for Public Health Students
 
 Caipora is a Python script specifically designed as a teaching tool for undergraduate and postgraduate students in public health. It simplifies the analysis of landscape metrics from raster data, offering interactive visualizations and saving outputs for further analysis. This tool is particularly focused on educating new students and professionals interested in geoprocessing, epidemiology, and public health.
 
