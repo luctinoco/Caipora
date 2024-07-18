@@ -1,4 +1,4 @@
-<a href="https://luctinoco.github.io/Caipora/" target="_blank"><img src="images/caipora.png" width="75"></a>
+<a href="https://luctinoco.github.io/Caipora/" target="_blank"><img src="images/caipora.png" width="100"></a>
 # Caipora - Metrics 
 
 ## Who is Caipora?
