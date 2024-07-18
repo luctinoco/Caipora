@@ -1,5 +1,5 @@
-![Logo](images/caipora_pqn.png)
 
+![Logo](images/caipora_pqn.png)
 # Caipora - Metrics
 
 ## Who is Caipora?
